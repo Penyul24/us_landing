@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8c6df;
+      color: #222;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      min-height: 100vh;
+      margin: auto;
+      padding: 55px 22px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* PHOTO */
+
+    .profile-photo {
+      width: 135px;
+      height: 135px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      margin-bottom: 20px;
+    }
+
+    /* SUBTITLE */
+
+    .subtitle {
+      font-size: 13px;
+      color: #765568;
+      margin-bottom: 38px;
+    }
+
+    /* CTA */
+
+    .cta {
+      width: 100%;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      margin-bottom: 13px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 15px;
+      color: #222;
+      text-decoration: none;
+      box-shadow: 0 7px 20px rgba(0,0,0,0.06);
+      transition: 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+    }
+
+    .cta:active {
+      transform: scale(0.98);
+    }
+
+    /* ICON */
+
+    .icon-box {
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: #fceaf3;
+      flex-shrink: 0;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* TEXT */
+
+    .cta-text {
+      margin-left: 14px;
+    }
+
+    .cta-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* ARROW */
+
+    .arrow {
+      margin-left: auto;
+      font-size: 25px;
+      color: #bbb;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 45px 18px 25px;
+      }
+
+      .profile-photo {
+        width: 125px;
+        height: 125px;
+      }
+
+      .subtitle {
+        margin-bottom: 32px;
+      }
+
+      .cta {
+        min-height: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- PROFILE -->
+
+    <img
+      class="profile-photo"
+      src="FB_IMG_1784880683467.jpg"
+      alt="Profile"
+    >
+
+    <div class="subtitle">
+      Nice to meet you
+    </div>
+
+    <!-- WHATSAPP -->
+
+    <a
+      class="cta"
+      href="https://track.chatvideocall.net/s/9a24608a59183?track=abs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="icon-box">
+        <img
+          class="icon"
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg"
+          alt="WhatsApp"
+        >
+      </div>
+
+      <div class="cta-text">
+        <div class="cta-title">WhatsApp</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+    </a>
+
+    <!-- VIDEO -->
+
+    <a
+      class="cta"
+      href="https://track.chatvideocall.net/s/9a24608a59183?track=abs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+
+      <div class="icon-box">
+        <img
+          class="icon"
+          src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg"
+          alt="Video"
+        >
+      </div>
+
+      <div class="cta-text">
+        <div class="cta-title">Video</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+    </a>
+
+  </div>
+
+</body>
+</html>
